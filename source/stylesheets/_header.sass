@@ -1,0 +1,56 @@
+nav#nav-main
+  +padding-leader(0)
+  +padding-trailer(0)
+  +float-right
+    
+  ul
+    font-weight: bold
+    line-height: 20px
+    overflow: visible
+    padding-top: 20px
+    +float-right
+    
+    body.pagina-home &
+      padding-top: 70px
+    
+    li
+      float: left
+      display: inline
+      margin-left: 0
+      line-height: 20px
+      +font-size(20px)
+      text-transform: lowercase
+      padding-left: 1em
+      padding-right: 1em
+      
+      &.nav-noticias
+        a
+          color: $noticias-color
+  
+          body.area-noticias &
+            border-bottom: 4px solid $noticias-color
+
+      &.nav-esportes
+        a
+          color: $esportes-color
+          
+          body.area-esportes &
+            border-bottom: 4px solid $esportes-color
+
+      &.nav-entretenimento
+        a
+          color: $entretenimento-color
+
+          body.area-entretenimento &
+            border-bottom: 4px solid $entretenimento-color
+  
+      a
+        +inline-block
+        font-weight: bold
+        text-decoration: none
+        border-bottom: 4px solid transparent
+  
+        &:active
+  
+        &:hover
+          text-decoration: none

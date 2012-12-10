@@ -1,0 +1,199 @@
+.titulo-area
+  margin-bottom: 40px
+  +box-shadow(0 1px 5px rgba(0,0,0,.08))
+
+  a
+    color: #fff
+
+  h1
+    color: #fff
+    padding: 15px 0
+    margin: 0
+    +font-size(24)
+    +outerRow
+
+  body.area-noticias &
+    background-color: $noticias-color
+    
+  body.area-esportes &
+    background-color: $esportes-color
+    
+  body.area-entretenimento &
+    background-color: $entretenimento-color
+
+
+
+#content-inner
+
+  #main
+    +column(8)
+  
+    body.pagina-detalhes &
+      +column(8)
+    
+    .destaque
+      +pie-clearfix
+      border-bottom: 1px dotted #cecece
+
+    section.listagem-artigos
+
+      // Destaque Secundario
+      .destaque-secundario
+
+        span.foto
+          +column(6, collapse)
+
+        span.conteudo
+          +column(6, collapse)
+
+          h1
+            +font-size(28)
+            line-height: 1em
+            font-weight: bold
+            text-transform: none
+
+          h2
+            color: #999
+            +font-size(16)
+            line-height: 1em
+            font-weight: normal
+      
+      // Destaque Terciario
+      .destaque-terciario
+        padding: 20px 0
+        
+        a
+          text-decoration: none
+              
+        .foto
+          display: block
+          float: left
+          height: 70px
+          margin-right: 10px
+          width: 100px
+      
+        .conteudo
+
+          h1, h2
+            padding: 0
+            margin: 0
+    
+          h1
+            +font-size(20)
+            line-height: 1em
+            font-weight: bold
+            text-transform: none
+          
+          h2
+            color: #999
+            +font-size(16)
+            line-height: 1em
+            font-weight: normal
+            padding-top: 8px
+            
+
+
+
+section.artigo
+  article
+    padding-bottom: 40px
+
+    header
+      h1
+        text-transform: none
+        line-height: .9em
+
+      h2
+        color: #999
+        +font-size(18)
+        font-weight: normal
+        line-height: 1em
+
+    .entry-content
+      p
+        color: #777
+        +font-size(15)
+        margin: 15px 0 5px 0
+
+
+
+#sidebar
+  +column(4)
+  
+  body.pagina-detalhes &
+    +column(3)
+    +offsetBy(1)
+    
+  .destaque
+    border-bottom: 1px dotted #cecece
+    +pie-clearfix
+  
+  &:last-of-type
+    border-bottom: none
+
+  header
+    h1
+      +font-size(15)
+      color: #999
+      font-weight: bold
+      text-transform: uppercase
+      margin: 0
+      padding: 0 0 20px 0
+  
+  section.ultimas-noticias
+    .destaque-terciario
+      &:first-of-type
+        .conteudo p
+          margin-top: 0
+
+      .conteudo
+        p
+          +font-size(18)
+          font-weight: bold
+          line-height: 1em
+          padding: 0
+          margin: 20px 0
+  
+  section.share-noticia
+    background-color: #f9f9f9
+    padding: 20px
+
+
+
+section#artigo-comentarios
+  header
+    h1
+      color: #000
+      +font-size(24)
+      text-transform: none
+      margin: 0
+      padding: 15px 0
+      border-top: 1px dotted #cecece
+      border-bottom: 1px dotted #cecece
+
+  .comentario
+    border-bottom: 1px dotted #cecece
+    padding: 15px 0
+
+    .autor
+      font-weight: bold
+      display: inline
+      padding-right: 5px
+      line-height: 1.1em
+
+    .conteudo
+      p
+        display: inline
+        color: #777
+        line-height: 1.1em
+
+    .entry-meta
+      display: block
+      padding-top: 4px
+      .entry-date
+        +font-size(12)
+        color: #999
+
+  .form-comentario
+    background-color: #f9f9f9
+    padding: 30px 100px
