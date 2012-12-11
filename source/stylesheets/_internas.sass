@@ -4,12 +4,14 @@
 
   a
     color: #fff
+    text-decoration: none
 
   h1
     color: #fff
     padding: 15px 0
     margin: 0
     +adjust-font-size-to(24px)
+    font-weight: bold
     +container
 
   body.area-noticias &
@@ -34,6 +36,7 @@
     .destaque
       +pie-clearfix
       border-bottom: 1px dotted #cecece
+      padding-bottom: 20px
 
     section.listagem-artigos
 
@@ -41,10 +44,10 @@
       .destaque-secundario
 
         span.foto
-          +span-columns(6, 12)
+          +span-columns(4, 8)
 
         span.conteudo
-          +span-columns(6, 12)
+          +span-columns(4 omega, 8)
 
           h1
             +adjust-font-size-to(28px)
@@ -80,14 +83,14 @@
     
           h1
             +adjust-font-size-to(20px)
-            line-height: 1em
+            +adjust-leading-to(.8)
             font-weight: bold
             text-transform: none
           
           h2
             color: #999
             +adjust-font-size-to(16px)
-            line-height: 1em
+            +adjust-leading-to(.7)
             font-weight: normal
             padding-top: 8px
             
@@ -101,19 +104,24 @@ section.artigo
     header
       h1
         text-transform: none
-        line-height: .9em
+        font-weight: bold
+        +adjust-font-size-to(38px)
+        +adjust-leading-to(2,38px)
+        margin-bottom: 10px
 
       h2
         color: #999
         +adjust-font-size-to(18px)
+        +adjust-leading-to(1)
         font-weight: normal
-        line-height: 1em
+        margin-bottom: 20px
 
     .entry-content
       p
         color: #777
         +adjust-font-size-to(15px)
-        margin: 15px 0 5px 0
+        +adjust-leading-to(1)
+        margin: 20px 0 5px 0
 
 
 
