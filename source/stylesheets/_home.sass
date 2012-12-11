@@ -1,20 +1,23 @@
 .destaques-categoria
   +span-columns(4,12)
   +nth-omega(3n)
+
   a
     text-decoration: none
 
   header
     h1
       +adjust-font-size-to(32px)
+      +adjust-leading-to(1)
       font-weight: bold
+      padding-bottom: 5px
 
   .conteudo
     display: block
     
     p
       +adjust-font-size-to(18px)
-      +adjust-leading-to(.7)
+      +adjust-leading-to(.8)
       font-weight: bold
 
   .destaque
@@ -42,5 +45,5 @@
     .conteudo
       p
         +adjust-font-size-to(16px)
-        +adjust-leading-to(.7)
+        +adjust-leading-to(.8)
         padding: 0 10px 0 0
