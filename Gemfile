@@ -13,8 +13,8 @@ gem "tzinfo", "~> 0.3.33"
 
 # Other
 gem "thin", "~> 1.5.0"
-gem "slim", "~> 1.3.3"
-gem "sass", "~> 3.2.1"
+gem "slim", "~> 1.3.4"
+gem "sass", "~> 3.2.3"
 gem "compass", "~> 0.12.2"
 gem "susy", "~> 1.0.5"
 gem "oily_png", "~> 1.0.2"
