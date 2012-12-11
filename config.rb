@@ -16,8 +16,7 @@ activate :livereload
 
 # Compass
 ########################################################
-require "zurb-foundation"
-# require "susy"
+require "susy"
 # Require any additional compass plugins here.
 
 

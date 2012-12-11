@@ -9,8 +9,8 @@
     color: #fff
     padding: 15px 0
     margin: 0
-    +font-size(24)
-    +outerRow
+    +adjust-font-size-to(24px)
+    +container
 
   body.area-noticias &
     background-color: $noticias-color
@@ -26,10 +26,10 @@
 #content-inner
 
   #main
-    +column(8)
+    +span-columns(8,12)
   
     body.pagina-detalhes &
-      +column(8)
+      +span-columns(8,12)
     
     .destaque
       +pie-clearfix
@@ -41,20 +41,20 @@
       .destaque-secundario
 
         span.foto
-          +column(6, collapse)
+          +span-columns(6, 12)
 
         span.conteudo
-          +column(6, collapse)
+          +span-columns(6, 12)
 
           h1
-            +font-size(28)
+            +adjust-font-size-to(28px)
             line-height: 1em
             font-weight: bold
             text-transform: none
 
           h2
             color: #999
-            +font-size(16)
+            +adjust-font-size-to(16px)
             line-height: 1em
             font-weight: normal
       
@@ -79,14 +79,14 @@
             margin: 0
     
           h1
-            +font-size(20)
+            +adjust-font-size-to(20px)
             line-height: 1em
             font-weight: bold
             text-transform: none
           
           h2
             color: #999
-            +font-size(16)
+            +adjust-font-size-to(16px)
             line-height: 1em
             font-weight: normal
             padding-top: 8px
@@ -105,24 +105,24 @@ section.artigo
 
       h2
         color: #999
-        +font-size(18)
+        +adjust-font-size-to(18px)
         font-weight: normal
         line-height: 1em
 
     .entry-content
       p
         color: #777
-        +font-size(15)
+        +adjust-font-size-to(15px)
         margin: 15px 0 5px 0
 
 
 
 #sidebar
-  +column(4)
+  +span-columns(4 omega, 12)
   
   body.pagina-detalhes &
-    +column(3)
-    +offsetBy(1)
+    +span-columns(3 omega,12)
+    +push(1)
     
   .destaque
     border-bottom: 1px dotted #cecece
@@ -133,7 +133,7 @@ section.artigo
 
   header
     h1
-      +font-size(15)
+      +adjust-font-size-to(15px)
       color: #999
       font-weight: bold
       text-transform: uppercase
@@ -148,7 +148,7 @@ section.artigo
 
       .conteudo
         p
-          +font-size(18)
+          +adjust-font-size-to(18px)
           font-weight: bold
           line-height: 1em
           padding: 0
@@ -164,7 +164,7 @@ section#artigo-comentarios
   header
     h1
       color: #000
-      +font-size(24)
+      +adjust-font-size-to(24px)
       text-transform: none
       margin: 0
       padding: 15px 0
@@ -191,7 +191,7 @@ section#artigo-comentarios
       display: block
       padding-top: 4px
       .entry-date
-        +font-size(12)
+        +adjust-font-size-to(12px)
         color: #999
 
   .form-comentario
