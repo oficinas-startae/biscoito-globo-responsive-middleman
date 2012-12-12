@@ -15,7 +15,6 @@ img
 body
   background-color: #fff
   font-family: helvetica, verdana, arial, sans-serif
-  // font-size: 13px
 
 header#header
   border-bottom: 1px solid #ddd
@@ -23,9 +22,7 @@ header#header
   +box-shadow(0 1px 5px rgba(0,0,0,.08))
 
   body.pagina-home &
-    height: 120px
-
-
+    +min-height(120px)
 
   #header-inner
     +container
@@ -105,7 +102,7 @@ header#header
     padding-bottom: 40px
   
     body.pagina-home &
-      padding-top: 40px
+      padding-top: 20px
 
 
 a

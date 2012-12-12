@@ -212,3 +212,31 @@ section#artigo-comentarios
   .form-comentario
     background-color: #f9f9f9
     padding: 30px 100px
+
+input, textarea, select, button
+  outline: none
+  
+// Remove the webkit glow
+*:focus
+  outline: none
+
+form
+  .form-row
+    padding-bottom: 10px
+    +pie-clearfix
+
+  input[type=text], input[type=email], textarea
+    width: 100%
+    +border-radius(2px)
+    border: 1px solid #bbc0c2
+    padding: .5em
+    &:focus
+      +box-shadow(0 0 4px #94bece)
+      border-color: darken(#bbc0c2, 20%)
+  
+  label
+    +adjust-font-size-to(12px)
+    +adjust-leading-to(1)
+    color: #9999a1
+    display: block
+
