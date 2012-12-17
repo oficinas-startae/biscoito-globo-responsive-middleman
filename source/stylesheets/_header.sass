@@ -25,7 +25,8 @@ nav#nav-main
       &.nav-noticias
         a
           color: $noticias-color
-  
+          
+          // Aplica o estilo abaixo no "li.nav-noticias" se o body tiver a classe ".area-noticias"
           body.area-noticias &
             border-bottom: 4px solid $noticias-color
 
@@ -33,6 +34,7 @@ nav#nav-main
         a
           color: $esportes-color
           
+          // Aplica o estilo abaixo no "li.nav-esportes" se o body tiver a classe ".area-esportes"
           body.area-esportes &
             border-bottom: 4px solid $esportes-color
 
@@ -40,6 +42,7 @@ nav#nav-main
         a
           color: $entretenimento-color
 
+          // Aplica o estilo abaixo no "li.nav-entretenimento" se o body tiver a classe ".area-entretenimento"
           body.area-entretenimento &
             border-bottom: 4px solid $entretenimento-color
   
@@ -53,3 +56,4 @@ nav#nav-main
   
         &:hover
           text-decoration: none
+          border-bottom: 4px solid
