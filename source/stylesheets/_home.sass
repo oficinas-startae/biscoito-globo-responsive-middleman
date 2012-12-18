@@ -1,15 +1,10 @@
 .destaques-categoria
   +span-columns(4,12)
   +nth-omega(3n)
-
-  +respond-to("smartphones-portrait")
-    background-color: red
-    +set-container-width
-    +span-columns(12,12)
-
-
-  a
-    text-decoration: none
+  
+  @include at-breakpoint(4 400px)
+    @include with-grid-settings(4,4em,1em,0)
+      +span-columns(4 omega)
 
   header
     h1

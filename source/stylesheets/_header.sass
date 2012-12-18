@@ -1,3 +1,48 @@
+// ESTILOS HEADER
+// ----------------------------------------/
+header#header
+  border-bottom: 1px solid #ddd
+  background-color: #fff
+  +box-shadow(0 1px 5px rgba(0,0,0,.08))
+
+  body.pagina-home &
+    +min-height(120px)
+
+  #header-inner
+    +container
+    +min-height(60px)
+    overflow: hidden
+
+    body.pagina-home &
+      +min-height(90px)
+
+    #logo
+      width: 193px
+      height: 24px
+      display: block
+      +background-2x("logo-interna")
+      +hide-text
+      position: absolute
+      top: 20px
+      
+      a
+        width: 193px
+        height: 24px
+        display: block
+      
+      body.pagina-home &
+        width: 191px
+        height: 79px
+        top: 20px
+        +background-2x("logo")
+
+        a
+          width: 191px
+          height: 79px
+
+
+// MAIN NAV
+// ----------------------------------------/
 nav#nav-main
   +padding-leader(0)
   +padding-trailer(0)

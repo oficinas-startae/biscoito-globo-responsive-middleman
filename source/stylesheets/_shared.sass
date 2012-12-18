@@ -1,0 +1,87 @@
+// Fluid medias
+// ----------------------------------------/
+img, embed, object, video
+  max-width: 100%
+  height: auto
+
+
+// Body
+// ----------------------------------------/
+body
+  background-color: #fff
+  font-family: helvetica, verdana, arial, sans-serif
+
+
+// Titles
+// ----------------------------------------/
+h1
+  text-transform: lowercase
+
+.area-noticias
+  a, h1
+    color: $noticias-color
+.area-esportes
+  a, h1
+    color: $esportes-color
+
+.area-entretenimento
+  a, h1
+    color: $entretenimento-color
+
+
+// Links
+// ----------------------------------------/
+a
+  text-decoration: none
+
+  &:hover
+    text-decoration: underline
+
+
+// Content - General
+// ----------------------------------------/
+#content
+
+  #content-inner
+    +container
+    padding-bottom: 40px
+    +susy-grid-background
+  
+    body.pagina-home &
+      padding-top: 20px
+
+    @include at-breakpoint(9 760px)
+      @include with-grid-settings(9,4em,1em,1em)
+        +container
+        +susy-grid-background
+
+    @include at-breakpoint(4 400px)
+      @include with-grid-settings(4,4em,1em,0)
+        +container
+        +susy-grid-background
+
+
+// Estilo box
+// ----------------------------------------/
+.box
+  background-color: #fff
+  +box-shadow(0 1px 4px rgba(#000, .2))
+  +pie-clearfix
+
+  .box-header
+    padding: 15px
+    border-bottom: 1px solid #ccd3db
+    background-color: #fafdfe
+    
+    h1
+      color: #333
+      +adjust-font-size-to(24px)
+      margin: 0
+
+
+// Borda arredondada nas fotos
+// ----------------------------------------/
+span.foto
+  img
+    +border-radius(4px)
+    display: block

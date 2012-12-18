@@ -1,3 +1,5 @@
+// Estilos títulos das áreas
+// ----------------------------------------/
 .titulo-area
   margin-bottom: 40px
   +box-shadow(0 1px 5px rgba(0,0,0,.08))
@@ -8,12 +10,11 @@
 
   h1
     color: #fff
+    font-weight: bold
     padding: 15px 0
     margin: 0
     +adjust-font-size-to(24px)
     +adjust-leading-to(1)
-    font-weight: bold
-    +text-shadow(0 1px 0 rgba(#000, .3))
     +container
 
   body.area-noticias &
@@ -26,7 +27,8 @@
     background-color: $entretenimento-color
 
 
-
+// Estilos conteudo internas
+// ----------------------------------------/
 #content-inner
 
   #main
@@ -213,6 +215,9 @@ section#artigo-comentarios
     background-color: #f9f9f9
     padding: 30px 100px
 
+
+// FORMS
+// ----------------------------------------/
 input, textarea, select, button
   outline: none
   
@@ -239,4 +244,3 @@ form
     +adjust-leading-to(1)
     color: #9999a1
     display: block
-
