@@ -1,4 +1,4 @@
 Biscoito Globo
 ==============
 
-Source-code para a oficina Ruby on Rails para designers
+Código frontend responsivo do biscoitoglobo.com com Middleman
